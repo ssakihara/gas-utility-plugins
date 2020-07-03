@@ -1,6 +1,6 @@
 {
     "name": "gas-utility-plugins",
-    "version": "v1.0.0",
+    "version": "v1.0.1",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "files": [
