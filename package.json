@@ -1,0 +1,41 @@
+{
+    "name": "gas-utility-plugins",
+    "version": "v1.0.0",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com/"
+    },
+    "files": [
+        "dist"
+    ],
+    "license": "MIT",
+    "scripts": {
+        "build": "yarn tsc ",
+        "lint": "yarn eslint --fix 'src/**/*.ts'"
+    },
+    "devDependencies": {
+        "@types/google-apps-script": "^1.0.14",
+        "@typescript-eslint/eslint-plugin": "^3.3.0",
+        "@typescript-eslint/parser": "^3.3.0",
+        "eslint": "^7.2.0",
+        "eslint-config-prettier": "^6.11.0",
+        "eslint-plugin-prettier": "^3.1.4",
+        "husky": "^4.2.5",
+        "lint-staged": "^10.2.11",
+        "prettier": "^2.0.5",
+        "typescript": "^3.9.5"
+    },
+    "engines": {
+        "npm": "Please use yarn.",
+        "node": "12.x"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "*.ts": "yarn lint"
+    }
+}

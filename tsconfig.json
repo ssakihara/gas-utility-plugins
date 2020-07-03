@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./",
+        "outDir": "./dist/",
+        "lib": ["es6"],
+        "types": ["google-apps-script"],
+        "module": "commonjs",
+        "target": "esnext",
+        "strict": true,
+        "esModuleInterop": true,
+        "noUnusedLocals": false,
+        "declaration": true
+    },
+    "include": ["src"],
+    "exclude": ["node_modules"]
+}
